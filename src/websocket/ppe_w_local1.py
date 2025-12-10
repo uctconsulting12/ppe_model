@@ -89,7 +89,6 @@ def run_ppe_detection(client_id: str, video_url: str, camera_id: int, user_id: i
         try:
             # ---------------- PPE inference ----------------
             result, error, annotated_frame,alert = ppe_detection(image_pil)
-            print(f"------------- {alert} -------------------------------")
             ts = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime())
             payload = {}
 

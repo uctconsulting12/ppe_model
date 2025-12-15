@@ -110,7 +110,6 @@ def run_ppe_detection(client_id: str, video_url: str, camera_id: int, user_id: i
                     "annotated_frame":frame_base64,
                     "alert":alert
                 }
-                print("--------------",alert,"----------------------------")
             # ---------------- WebSocket send ----------------
             
                 if payload:
